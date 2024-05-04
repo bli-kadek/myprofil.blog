@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css">
+    <style>
+        body {
+            font-family: "Comic Sans MS";
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: url('img/latar1.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #0000001a;
+            background-image: url('img/latar-hitam3.jpg'); /* Ganti 'nama_file_gambar.jpg' dengan lokasi dan nama file gambar Anda */
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+        }
+        
+        .profile {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .profile h1 {
+            margin: 5px 0;
+            color: #ffffff; 
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .social-link {
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .social-link img {
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+            transition: transform 0.3s ease;
+        }
+        .social-link:hover img {
+            transform: scale(1.2);
+        }
+        .about-me {
+            text-align: justify;
+            margin-top: 20px;
+            color: #ffffff; /* Mengubah warna teks menjadi hitam */
+            font-family: "Georgia";
+        }
+        .about-me h2 {
+            text-align: center;
+            font-family: "Georgia";
+        }
+        .separator {
+            margin: 20px 0;
+            border-top: 3px solid #297cf1; /* Garis horizontal dengan warna hitam */
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #b7b2b2;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        footer ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            transition: color 0.3s;
+        }
+        footer ul li a:hover {
+            color: #297cf1;
+        }
+        #contact-form-container {
+            display: none;
+        }
+        .formcarry-container form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .formcarry-block {
+            width: 100%;
+            max-width: 300px; /* Sesuaikan lebar maksimum kotak input sesuai kebutuhan */
+            margin-bottom: 20px; /* Atur jarak antara setiap blok */
+        }
+        
+        .formcarry-block label {
+            text-align: left;
+            color: #ffffff;
+        }
+        
+        .formcarry-block input,
+        .formcarry-block textarea {
+            width: 100%;
+        }
+        .experience .experience-link {
+            color: #ffffff;
+            transition: color 0.3s, background-color 0.3s, transform 0.3s;
+            cursor: pointer;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #ffffff; /* Warna bingkai */
+            border-radius: 5px; /* Membuat sudut bingkai sedikit membulat */
+            text-decoration: none; /* Menghilangkan garis bawah teks tautan */
+        }
+        
+        .experience .experience-link:hover {
+            color: #ffffff;
+            background-color: #297cf1; /* Warna latar belakang saat hover */
+            border-color: #ffffff; /* Warna bingkai saat hover */
+            transform: scale(1.1);
+        }        
+        .experience {
+            margin-top: 20px; /* Menambah jarak atas dari menu pengalaman */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="profile">
+        <img src="img/profil.jpg" alt="gambar">
+        <h1>KADEK DIPA ADITIA</h1>   
+    <div class="social-links">
+        <a href="https://www.facebook.com/kadek.dipa.aditia.56" class="social-link">
+            <img src="img/facebook-clr.png" alt="Facebook">
+            Facebook
+        </a>
+        <a href="https://www.instagram.com/kdipaa_a" class="social-link">
+            <img src="img/instagram-clr.png" alt="Instagram">
+            Instagram
+        </a>
+        <a href="https://www.linkedin.com/in/kadek-dipa-aditia-250131289" class="social-link">
+            <img src="img/linkedin-clr.png" alt="LinkedIn">
+            LinkedIn
+        </a>
+    </div>
+    <div class="experience">
+        <a href="https://sites.google.com/" class="experience-link" target="_blank">Pengalaman</a>
+    </div>
+       
+    <div class="separator"></div>
+    <div class="about-me">
+        <h2>About Me</h2>
+        <p>Hallo.<br></br>
+            perkenalkan nama saya Kadek Dipa Aditia asal dari Sulawesi Tengah. saya berkuliah di Politeknik Energi dan Mineral Akamigas dengan program studi Teknik Instrumentasi Kilang.<br></br>
+            Pengembangan keahlian dan keterampilan merupakan hal yang paling penting dalam bekerja, oleh karenanya saya sendiri mengembankan keahlian sesuai prodi saya yaitu instrumentasi dan elektronika pada sektor migas. saya juga mengembangkan keahlian berbahasa inggris dan kemampuan softskill agar lebih siap menghadapai tantangan dunia kerja.
+            selain pengembangan keahlian dari perkuliahan, saya juga sering mengikuti pelatihan dan kursus sebagai skill tambahan yang saya miliki.
+            <br></br>
+            Motto hidup saya adalah talk less do more yang memiliki makna untuk tidak banyak wacana dalam hidup tapi perbanyak ambil tindakan. karena keberhasilan ada pada orang yang berani bertindak pada setiap kesempatan dan berani menghadapi resikonya.</p>
+    </div>
+</div>
+<footer>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/kadek-dipa-aditia-250131289/details/certifications?profileUrn=urn%3Ali%3Afsd_profile%3AACoAAEX21xwBgLoc5p81VmZPVLFWKLfyAAnYmyM&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BUovzyd2XQoWPNK3odt%2FCOw%3D%3D">Sertifikat</a></li>
+        <li><a href="#" id="contact-me-link">Contact Me</a></li>
+    </ul>
+</footer>
+
+<section class="formcarry-container" id="contact-form-container">
+    <form action="https://formcarry.com/s/KaTddnqR-fF" method="POST" enctype="multipart/form-data">
+        
+        <div class="formcarry-block">
+            <label for="fc-generated-1-name">Full Name</label>
+            <input type="text" name="name" id="fc-generated-1-name" placeholder="Your first and last name" />
+        </div>
+        
+        <div class="formcarry-block">
+            <label for="fc-generated-1-email">Your Email Address</label>
+            <input type="email" name="email" id="fc-generated-1-email" placeholder="contoh@gmail.com" />
+        </div>
+        
+        <div class="formcarry-block">
+            <label for="fc-generated-1-message">Your message</label>
+            <textarea name="message" name="message" id="fc-generated-1-message" placeholder="Enter your message..."></textarea>
+        </div>
+        
+        <div class="formcarry-block">  
+            <button type="submit">Send</button>
+        </div>
+    
+    </form>
+</section>
+
+
+<script>
+    // Mengambil referensi ke elemen "Contact Me" dan kontainer formulir
+const contactMeLink = document.getElementById('contact-me-link');
+const contactFormContainer = document.getElementById('contact-form-container');
+
+// Menambahkan event listener untuk klik pada tautan "Contact Me"
+contactMeLink.addEventListener('click', function(event) {
+    // Mencegah tindakan default dari tautan
+    event.preventDefault();
+
+    // Menampilkan atau menyembunyikan formulir tergantung pada statusnya
+    if (contactFormContainer.style.display === 'none') {
+        contactFormContainer.style.display = 'block';
+    } else {
+        contactFormContainer.style.display = 'none';
+    }
+});
+
+</script>
+
+</body>
+</html>
